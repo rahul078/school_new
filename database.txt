@@ -1,0 +1,38 @@
+GRANT ALL PRIVILEGES ON *.* TO 'editor'@'localhost' IDENTIFIED BY 'Mvm@Mvm';
+
+CREATE DATABASE School;
+
+create table principal_desk(header varchar(25),data varchar(50),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+create table notice_board(header varchar(25),data varchar(50),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+create table latest_news(header varchar(25),data varchar(50),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+create table Events(date varchar(10),place varchar(20),img longblob,header varchar(20),data varchar(50),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+create table upcoming_events(event_date varchar(15),header varchar(20),description varchar(50),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+
+insert into School.upcoming_events (event_date,header,description) values('1-Jan-2019','New Year','New Year Party');
+insert into School.upcoming_events (event_date,header,description) values('10-Jan-2019','School Start','School starts from this day');
+insert into School.upcoming_events (event_date,header,description) values('26-Jan-2019','Republic day','Event held inschool');
+
+create table gallery(img blob,event_year varchar(10),header varchar(20),data varchar(50),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+insert into School.principal_desk (header,data)values('header 1','data 1');
+insert into School.principal_desk (header,data)values('header 2','data 2');
+insert into School.principal_desk (header,data)values('header 3','data 3');
+insert into School.principal_desk (header,data)values('header 4','data 4');
+insert into School.principal_desk (header,data)values('header 5','data 5');
+
+insert into School.notice_board (header,data)values('header 1','data 1');
+insert into School.notice_board (header,data)values('header 2','data 2');
+insert into School.notice_board (header,data)values('header 3','data 3');
+insert into School.notice_board (header,data)values('header 4','data 4');
+insert into School.notice_board (header,data)values('header 5','data 5');
+
+insert into School.latest_news (header,data)values('header 1','data 1');
+insert into School.latest_news (header,data)values('header 2','data 2');
+insert into School.latest_news (header,data)values('header 3','data 3');
+insert into School.latest_news (header,data)values('header 4','data 4');
+insert into School.latest_news (header,data)values('header 5','data 5');

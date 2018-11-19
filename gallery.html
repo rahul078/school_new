@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from demo.esmeth.com/universe/Blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Sep 2018 06:00:03 GMT -->
+<head>
+  <?php
+  $servername = "localhost";
+  $username = "editor1";
+  $password = "Mvm@Mvm";
+  $dbname = "School";
+  $conn = mysqli_connect($servername, $username, $password, $dbname);
+  $query = "SELECT * FROM gallery";
+  $result = mysqli_query($conn, $query);
+
+  ?>
+    <title>Maharishi Vidya Mandir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="College Education Responsive Template">
+    <meta name="author" content="Esmet">
+    <meta charset="UTF-8">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+
+    <link href="style.css" rel="stylesheet" media="screen">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+    <!-- JavaScripts -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+        </div>
+    <![endif]-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=key&callback=myMap"></script>
+    <script language="JavaScript">
+  /**
+    * Disable right-click of mouse, F12 key, and save key combinations on page
+    * By Arthur Gareginyan (arthurgareginyan@gmail.com)
+    * For full source code, visit http://www.mycyberuniverse.com
+    */function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+</head>
+<body>
+
+    <!-- This one in here is responsive menu for tablet and mobiles -->
+    <div class="responsive-navigation visible-sm visible-xs">
+        <a href="#" class="menu-toggle-btn">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="responsive_menu">
+          <ul class="main_menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="admission.html">Admission</a>
+                  <ul>
+                    <li><a href="admission.html#collapse1">Admission Policy</a></li>
+                    <li><a href="admission.html#collapse2">Documents Required</a></li>
+                    <li><a href="admission.html#collapse3">Fee Structure</a></li>
+                    <li><a href="admission.html#collapse4">Subjects Offered</a></li>
+                    <li><a href="admission.html#collapse5">Admission Guidelines</a></li>
+                  </ul>
+              </li>
+              <li><a href="academics.html">Academics</a>
+                  <ul>
+                    <li><a href="academics.html#collapse1">School Uniform</a></li>
+                    <li><a href="academics.html#collapse2">Educational Links</a></li>
+                    <li><a href="academics.html#collapse3">Discipline</a></li>
+                  </ul>
+              </li>
+              <li><a href="facilities.html">Facilities</a>
+                  <ul>
+                    <li><a href="facilities.html#collapse1">Labs</a></li>
+                    <li><a href="facilities.html#collapse2">Library</a></li>
+                    <li><a href="facilities.html#collapse3">Smart Class</a></li>
+                    <li><a href="facilities.html#collapse4">Dhanvantri</a></li>
+                  </ul>
+              </li>
+              <li><a href="activities.html">Activities</a>
+                  <ul>
+                    <li><a href="activities.html#collapse1">Sports</a></li>
+                    <li><a href="activities.html#collapse2">Extracuricular Activities</a></li>
+                    <li><a href="activities.html#collapse3">Co-Curricular Activities</a></li>
+                    <li><a href="activities.html#collapse4">Club Activities</a></li>
+                    <li><a href="activities.html#collapse5">TM and Yoga</a></li>
+                    <li><a href="activities.html#collapse6">OSLA</a></li>
+                    <li><a href="activities.html#collapse7">Hi Bro</a></li>
+                  </ul>
+              </li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="events-list.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul> <!-- /.main_menu -->
+          <ul class="social_icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+          </ul> <!-- /.social_icons -->
+      </div> <!-- /.responsive_menu -->
+  </div> <!-- /responsive_navigation -->
+
+
+  <header class="site-header">
+      <div class="container">
+          <div class="row">
+
+
+              <div class="col-md-4">
+                  <div class="logo">
+                      <a href="index.html" rel="home">
+                          <img src="images/logo.png" style="width:50%;height:50%" alt="Universe">
+                      </a>
+                  </div> <!-- /.logo -->
+              </div> <!-- /.col-md-4 -->
+
+              <div class="col-md-4 header-right">
+                <p><i class="fa fa-phone"></i>0435 2462666/2462766</p>
+                <p><i class="fa fa-envelope"></i> <a href="#">info@maharishividyamandirkmb.com</a></p>
+                  <ul class="small-links">
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="admin.html">Login</a></li>
+                  </ul>
+              </div> <!-- /.header-right -->
+              <div class="col-md-4">
+                <div class="logo">
+                    <a href="index.html" rel="home">
+                        <img src="images/maharishi.png" style="width:55%;height:55%;" alt="Universe">
+                    </a>
+                </div> <!-- /.logo -->
+              </div> <!-- /.header-left -->
+          </div>
+      </div> <!-- /.container -->
+
+      <div class="nav-bar-main" role="navigation">
+          <div class="container">
+              <nav class="main-navigation clearfix visible-md visible-lg" role="navigation">
+                      <ul class="main-menu sf-menu">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="admission.html">Admission</a>
+                              <ul class="sub-menu">
+                                <li><a href="admission.html#collapse1">Admission Policy</a></li>
+                                <li><a href="admission.html#collapse2">Documents Required</a></li>
+                                <li><a href="admission.html#collapse3">Fee Structure</a></li>
+                                <li><a href="admission.html#collapse4">Subjects Offered</a></li>
+                                <li><a href="admission.html#collapse5">Admission Guidelines</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="academics.html">Academics</a>
+                              <ul class="sub-menu">
+                                <li><a href="academics.html#collapse1">School Uniform</a></li>
+                                <li><a href="academics.html#collapse2">Educational Links</a></li>
+                                <li><a href="academics.html#collapse3">Discipline</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="facilities.html">Facilities</a>
+                              <ul class="sub-menu">
+                                <li><a href="facilities.html#collapse1">Labs</a></li>
+                                <li><a href="facilities.html#collapse2">Library</a></li>
+                                <li><a href="facilities.html#collapse3">Smart Class</a></li>
+                                <li><a href="facilities.html#collapse4">Dhanvantri</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="activities.html">Activities</a>
+                              <ul class="sub-menu">
+                                <li><a href="activities.html#collapse1">Sports</a></li>
+                                <li><a href="activities.html#collapse2">Extracuricular Activities</a></li>
+                                <li><a href="activities.html#collapse3">Co-Curricular Activities</a></li>
+                                <li><a href="activities.html#collapse4">Club Activities</a></li>
+                                <li><a href="activities.html#collapse5">TM and Yoga</a></li>
+                                <li><a href="activities.html#collapse6">OSLA</a></li>
+                                <li><a href="activities.html#collapse7">Hi Bro</a></li>
+                              </ul>
+                          </li>
+                          <li class="active"><a href="gallery.html">Gallery</a></li>
+                          <li><a href="events-list.html">Events</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                      </ul> <!-- /.main-menu -->
+
+                        <ul class="social-icons pull-right">
+                            <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+                        </ul> <!-- /.social-icons -->
+                </nav> <!-- /.main-navigation -->
+            </div> <!-- /.container -->
+        </div> <!-- /.nav-bar-main -->
+
+    </header> <!-- /.site-header -->
+
+
+
+    <!-- Being Page Title -->
+    <div class="container">
+        <div class="page-title clearfix">
+            <div class="row">
+                <div class="col-md-12">
+                    <h6><a href="index.html">Home</a></h6>
+                    <h6><span class="page-active">Gallery</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <div class="widget-main">
+                    <div class="widget-main-title">
+                        <h4 class="widget-title">Filter Controls</h4>
+                    </div>
+                    <div class="widget-inner">
+                        <ul class="mixitup-controls">
+                            <li class="filter" data-filter="all">Show All</li>
+                            <li class="filter" data-filter="event16">Event 2016-17</li>
+                            <li class="filter" data-filter="event17">Event 2017-18</li>
+                            <li class="filter" data-filter="event18">Event 2018-19</li>
+                        </ul>
+                    </div> <!-- /.widget-inner -->
+                </div> <!-- /.widget-main -->
+
+
+            </div> <!-- /.col-md-3 -->
+
+            <div class="col-md-9">
+                <div class="row">
+
+                    <div id="Grid">
+                      <?php
+                        while($row = mysqli_fetch_array($result))
+                        {
+                          ?>
+
+                    <div class="col-md-4 mix <?php echo $row['event_year'];?>"">
+                        <div class="gallery-item">
+                            <a class="fancybox" rel="gallery1" href="images/gallery/gallery1.jpg">
+                                <div class="gallery-thumb">
+                                    <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['img'] ).'" height="200px" width="200px" class="img-thumnail" />';?>
+                                </div>
+                                <div class="gallery-content">
+                                    <h4 class="gallery-title"><?php echo $row['header'];?></h4>
+                                    <p class="small-text"><?php echo $row['data'];?></p>
+                                </div>
+                            </a>
+                        </div> <!-- /.gallery-item -->
+                    </div> <!-- /.col-md-4 -->
+
+                    <?php
+                    }  ?>
+
+                    </div> <!-- /#Grid -->
+
+                </div> <!-- /.row -->
+
+
+
+            </div> <!-- /.col-md-9 -->
+
+        </div> <!-- /.row -->
+
+    </div> <!-- /.container -->
+
+
+        <!-- begin The Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Contact Us</h4>
+                            <p style="font-weight:bold">MVM school short description
+                             </br></br>
+                             Mailing address:</br>Ammachathiram, Thirubuvanam (PO), </br> Mayiladthurai Main Road.</p>
+
+                             <br />
+                              Phone Numbers:</br>+91 435 2462666</br>+91 435 2462766</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Maps</h4>
+                    <div id="map" style="width:90%;height:200px;background:yellow">
+                        </div>
+                    </div>
+
+
+                </div> <!-- /.row -->
+
+
+            </div> <!-- /.container -->
+        </footer> <!-- /.site-footer -->
+
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+
+    </html>

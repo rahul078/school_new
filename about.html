@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from demo.esmeth.com/universe/Blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Sep 2018 06:00:03 GMT -->
+<head>
+  <?php
+  $servername = "localhost";
+  $username = "editor1";
+  $password = "Mvm@Mvm";
+  $dbname = "School";
+  $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+  ?>
+    <title>Maharishi Vidya Mandir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="College Education Responsive Template">
+    <meta name="author" content="Esmet">
+    <meta charset="UTF-8">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+
+    <link href="style.css" rel="stylesheet" media="screen">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+    <!-- JavaScripts -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+        </div>
+    <![endif]-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=key&callback=myMap"></script>
+    <script language="JavaScript">
+  /**
+    * Disable right-click of mouse, F12 key, and save key combinations on page
+    * By Arthur Gareginyan (arthurgareginyan@gmail.com)
+    * For full source code, visit http://www.mycyberuniverse.com
+    */function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+<style media="screen">
+#main_tab{
+float:left;
+background: white;
+max-height:500px;
+overflow-y:scroll;
+width: 100%;
+}
+</style>
+</head>
+<body>
+
+    <!-- This one in here is responsive menu for tablet and mobiles -->
+    <div class="responsive-navigation visible-sm visible-xs">
+        <a href="#" class="menu-toggle-btn">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="responsive_menu">
+            <ul class="main_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admission.html">Admission</a>
+                    <ul>
+                      <li><a href="admission.html#collapse1">Admission Policy</a></li>
+                      <li><a href="admission.html#collapse2">Documents Required</a></li>
+                      <li><a href="admission.html#collapse3">Fee Structure</a></li>
+                      <li><a href="admission.html#collapse4">Subjects Offered</a></li>
+                      <li><a href="admission.html#collapse5">Admission Guidelines</a></li>
+                    </ul>
+                </li>
+                <li><a href="academics.html">Academics</a>
+                    <ul>
+                      <li><a href="academics.html#collapse1">School Uniform</a></li>
+                      <li><a href="academics.html#collapse2">Educational Links</a></li>
+                      <li><a href="academics.html#collapse3">Discipline</a></li>
+                    </ul>
+                </li>
+                <li><a href="facilities.html">Facilities</a>
+                    <ul>
+                      <li><a href="facilities.html#collapse1">Labs</a></li>
+                      <li><a href="facilities.html#collapse2">Library</a></li>
+                      <li><a href="facilities.html#collapse3">Smart Class</a></li>
+                      <li><a href="facilities.html#collapse4">Dhanvantri</a></li>
+                    </ul>
+                </li>
+                <li><a href="activities.html">Activities</a>
+                    <ul>
+                      <li><a href="activities.html#collapse1">Sports</a></li>
+                      <li><a href="activities.html#collapse2">Extracuricular Activities</a></li>
+                      <li><a href="activities.html#collapse3">Co-Curricular Activities</a></li>
+                      <li><a href="activities.html#collapse4">Club Activities</a></li>
+                      <li><a href="activities.html#collapse5">TM and Yoga</a></li>
+                      <li><a href="activities.html#collapse6">OSLA</a></li>
+                      <li><a href="activities.html#collapse7">Hi Bro</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events-list.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> <!-- /.main_menu -->
+            <ul class="social_icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul> <!-- /.social_icons -->
+        </div> <!-- /.responsive_menu -->
+    </div> <!-- /responsive_navigation -->
+
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-4">
+                    <div class="logo">
+                        <a href="index.html" rel="home">
+                            <img src="images/logo.png" style="width:50%;height:50%" alt="Universe">
+                        </a>
+                    </div> <!-- /.logo -->
+                </div> <!-- /.col-md-4 -->
+
+                <div class="col-md-4 header-right">
+                  <p><i class="fa fa-phone"></i>0435 2462666/2462766</p>
+                  <p><i class="fa fa-envelope"></i> <a href="#">info@maharishividyamandirkmb.com</a></p>
+                    <ul class="small-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="admin.html">Login</a></li>
+                    </ul>
+                </div> <!-- /.header-right -->
+                <div class="col-md-4">
+                  <div class="logo">
+                      <a href="index.html" rel="home">
+                          <img src="images/maharishi.png" style="width:55%;height:55%;" alt="Universe">
+                      </a>
+                  </div> <!-- /.logo -->
+                </div> <!-- /.header-left -->
+            </div>
+        </div> <!-- /.container -->
+
+        <div class="nav-bar-main" role="navigation">
+            <div class="container">
+                <nav class="main-navigation clearfix visible-md visible-lg" role="navigation">
+                        <ul class="main-menu sf-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="admission.html">Admission</a>
+                                <ul class="sub-menu">
+                                  <li><a href="admission.html#collapse1">Admission Policy</a></li>
+                                  <li><a href="admission.html#collapse2">Documents Required</a></li>
+                                  <li><a href="admission.html#collapse3">Fee Structure</a></li>
+                                  <li><a href="admission.html#collapse4">Subjects Offered</a></li>
+                                  <li><a href="admission.html#collapse5">Admission Guidelines</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="academics.html">Academics</a>
+                                <ul class="sub-menu">
+                                  <li><a href="academics.html#collapse1">School Uniform</a></li>
+                                  <li><a href="academics.html#collapse2">Educational Links</a></li>
+                                  <li><a href="academics.html#collapse3">Discipline</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="facilities.html">Facilities</a>
+                                <ul class="sub-menu">
+                                  <li><a href="facilities.html#collapse1">Labs</a></li>
+                                  <li><a href="facilities.html#collapse2">Library</a></li>
+                                  <li><a href="facilities.html#collapse3">Smart Class</a></li>
+                                  <li><a href="facilities.html#collapse4">Dhanvantri</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="activities.html">Activities</a>
+                                <ul class="sub-menu">
+                                  <li><a href="activities.html#collapse1">Sports</a></li>
+                                  <li><a href="activities.html#collapse2">Extracuricular Activities</a></li>
+                                  <li><a href="activities.html#collapse3">Co-Curricular Activities</a></li>
+                                  <li><a href="activities.html#collapse4">Club Activities</a></li>
+                                  <li><a href="activities.html#collapse5">TM and Yoga</a></li>
+                                  <li><a href="activities.html#collapse6">OSLA</a></li>
+                                  <li><a href="activities.html#collapse7">Hi Bro</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="events-list.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul> <!-- /.main-menu -->
+
+                        <ul class="social-icons pull-right">
+                            <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+                        </ul> <!-- /.social-icons -->
+                </nav> <!-- /.main-navigation -->
+            </div> <!-- /.container -->
+        </div> <!-- /.nav-bar-main -->
+
+    </header> <!-- /.site-header -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Here begin Main Content -->
+            <div class="col-md-8">
+                <div class="row">
+
+                    <div class="col-md-12">
+                      <div class="container">
+  <h2><center>ABOUT US</center></h2>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">SCHOOL PROFILE</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body"><img src="images/maharishi.jpg" alt="Image not found" style="float: left; width: 30%; margin-right: 5%; margin-bottom: 5%; margin-left: 5%;">
+  <p style="font-size:1.5rem;color:black">As Maharishiji has stated “An action is to be rightly thought and the steps to be accomplished are to be rightly planned” we are always striving forward to accomplish our best in every sphere. Maharishi Vidya Mandir strongly believes in the holistic development of children in order to mould them to cater to the needs of the society. The school is being run by the Maharishi Institute of Creative Intelligence U.P. which is a Society registered under the Societies Registration Act of 1860. The ideal aim of the school is to nurture the tender shoots of the rural sect and work towards the betterment of the society.</p>
+  <p style="font-size:1.5rem;color:black">The unique feature of this school is teaching of Transcendental Meditation to every child admitted to the school. It is a simple, natural, effortless procedure whereby the mind easily and naturally arrives at the source of the thought, the settled state of mind – Transcendental consciousness – Pure consciousness, self referral consciousness, which is the source of all creative processes. To groom the students in the field of spirituality there are Bhajans conducted on Thursdays. These Bhajans are preceded by an anecdote read out from the life of Maharishi Mahesh Yogi and a hymn from the Bhagavath Gita. The students of our school are strengthened physically, mentally and morally to adapt themselves to the future society through yogic exercises and Transcendental Meditation. All the students and staff of the school meditate both in the morning and afternoon sessions.</p>
+  <p style="font-size:1.5rem;color:black">Maharishi Vidya Mandir is located in 64 acre plot with blocks namely Ved Bhavan, Hasthamalaka, Vasishta Bhavan, Vyas Bhavan, Padmapadha, Trotakacharya & Varthikakar ( Library – 3000 sq.feet). The school strength is around 6858 which is taken care of by around 350 Teaching and Non-teaching staff.</p>
+  <p style="font-size:1.5rem;color:black">The serene atmosphere of the school is enhanced through lawns, Bird Sanctuary, Duck pond and Swimming pool. The greenery found throughout the school campus, added to the chirping of birds provides the students a natural environment to learn.</p></div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">MISSION STATEMENT</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body"><p style="font-size:1.5rem;color:black">The school strives to improve the performance of the students every year in
+  such a way that at least 40% of the students get into high profile institutions
+  and other reputed institutions. It ensures to improve the student's physical
+  and mental health through physical fitness programs. Transcendental
+  meditation, yoga and pranayama makes the learning environment happy and
+  peaceful.</p>
+</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">SECRETARY MESSAGE</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body"><p style="font-size:1.5rem;color:black">HELLO AND WELCOME TO OUR SCHOOL. It is one of the best schools in India. Please visit the website for more information.</p>
+</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">FACULTY</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div id="main_tab">
+        <div class="panel-body">  <p style="font-size:1.5rem;color:black">
+          <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sl. No</th>
+              <th>Name</th>
+              <th>Designation</th>
+              <th>Qualification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>PADMAVATHY.P</td>
+              <td>Principal</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>SIVARAMAN.P</td>
+              <td>Vice Principal</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>VEERAPPAN.R</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>ABIRAMI.R</td>
+              <td>TGT</td>
+              <td>MSC, B.Ed.</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>AMUDHA.G</td>
+              <td>TGT</td>
+              <td>MSC, B.Ed.</td>
+            </tr>
+            <tr>
+              <td>6.</td>
+              <td>SANTHALAKSHMI.M</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>7.</td>
+              <td>SUGANTHI.P</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>8.</td>
+              <td>SRIDEVI.S</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>9.</td>
+              <td>MANIKANDAN.S</td>
+              <td>TGT</td>
+              <td>MSC,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>10.</td>
+              <td>ARUN PRASATH.R</td>
+              <td>TGT</td>
+              <td>MSC,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>11.</td>
+              <td>KARTHIKEYAN.C</td>
+              <td>TGT</td>
+              <td>MSC,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>12.</td>
+              <td>SHANMUGA PRIYA.R</td>
+              <td>TGT</td>
+              <td>MSC,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>13.</td>
+              <td>JOSEPH FELIX ROCH.R</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>14.</td>
+              <td>RAJESWARI.R</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>15.</td>
+              <td>VIJAYASHANTHI.M</td>
+              <td>TGT</td>
+              <td>MSC,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>16.</td>
+              <td>VALAVAPPAN.T</td>
+              <td>TGT</td>
+              <td>MSC,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>17.</td>
+              <td>DINESH.U</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>18.</td>
+              <td>SUNDARAVADHANAM.R</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>19.</td>
+              <td>MOHANA PRIYA.K</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>20.</td>
+              <td>SUBHAA.R</td>
+              <td>TGT</td>
+              <td>MSC,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>21.</td>
+              <td>KOLANCHIYAPPAN.M</td>
+              <td>TGT</td>
+              <td>MFA</td>
+            </tr>
+            <tr>
+              <td>22.</td>
+              <td>SAKTHIVEL.M</td>
+              <td>TGT</td>
+              <td>MSC,M.Phil,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>23.</td>
+              <td>THAMILARASI.M</td>
+              <td>TGT</td>
+              <td>MSC,M.Phil,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>24.</td>
+              <td>JENNY LOGA.R</td>
+              <td>TGT</td>
+              <td>MSC,M.Phil,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>25.</td>
+              <td>BHUVANESWARI.P</td>
+              <td>TGT</td>
+              <td>MCA,MBA</td>
+            </tr>
+            <tr>
+              <td>26.</td>
+              <td>RAJARAJESHWARI.B</td>
+              <td>PRIMARY TEACHER</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>27.</td>
+              <td>ANURADHA.B</td>
+              <td>TGT</td>
+              <td>MSC,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>28.</td>
+              <td>INDIRA.S</td>
+              <td>TGT</td>
+              <td>M.A.,B.Ed.</td>
+            </tr>
+            <tr>
+              <td>29.</td>
+              <td>MANOCHITHRA.N</td>
+              <td>TGT</td>
+              <td>M.C.A</td>
+            </tr>
+            <tr>
+              <td>30.</td>
+              <td>DHIVYA.T</td>
+              <td>LIBRARIAN</td>
+              <td>B.SC.,M.Lis.</td>
+            </tr>
+            <tr>
+              <td>31.</td>
+              <td>GANESAN.P</td>
+              <td>PET</td>
+              <td>MSC, M.Phil.,M.PEd.</td>
+            </tr>
+            <tr>
+              <td>32.</td>
+              <td>VEERAMANI.S</td>
+              <td>PET</td>
+              <td>B.PEd.,M. PEd.</td>
+            </tr>
+            <tr>
+            <td>33.</td>
+            <td>SRIVIDHYA.R</td>
+            <td>PET</td>
+            <td>M.Phil.,M.PEd.</td>
+            </tr>
+            <tr>
+              <td>34.</td>
+              <td>AMUTHA.G</td>
+              <td>PRIMARY TEACHER</td>
+              <td>MSC,B.Ed.(BOTANY)</td>
+            </tr>
+            <tr>
+              <td>35.</td>
+              <td>BARATHI.B</td>
+              <td>PRT</td>
+              <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>36.</td>
+                <td>BHUVANESWARI.R</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>37.</td>
+                <td>ARTHI.S</td>
+                <td>PRT</td>
+                <td>M.A., M.Phil.,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>38.</td>
+                <td>VIKNESHWARI.S</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>39.</td>
+                <td>NANDHINEE.A</td>
+                <td>PRT</td>
+                <td>B.A.,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>40.</td>
+                <td>GOMATHY.M</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>41.</td>
+                <td>ARTHI R</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>42.</td>
+                <td>SUBHA.K</td>
+                <td>PRT</td>
+                <td>M.A.,M.Phil.,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>43.</td>
+                <td>PADMA SANGEETHA.K</td>
+                <td>PRT</td>
+                <td>B.A.,M.Com.,D.El.Ed.</td>
+              </tr>
+              <tr>
+                <td>44.</td>
+                <td>ISHWARYA.K</td>
+                <td>PRT</td>
+                <td>M.C.A.,MSC,M.Phil.,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>45.</td>
+                <td>GIRIJA.G</td>
+                <td>PET</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>46.</td>
+                <td>SARADHA.R</td>
+                <td>PRT</td>
+                <td>B.A,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>47.</td>
+                <td>CHANDRA.G</td>
+                <td>PRT</td>
+                <td>B.B.A,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>48.</td>
+                <td>ABIRAMI.B</td>
+                <td>PRT</td>
+                <td>B.Sc.,M.B.A.,D.El.Ed.</td>
+              </tr>
+              <tr>
+                <td>49.</td>
+                <td>MEENAKSHI.K</td>
+                <td>PRT</td>
+                <td>MONTESORRI, B.LIT.,D.El.Ed.</td>
+              </tr>
+              <tr>
+                <td>50.</td>
+                <td>KAVITHA.R</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>51.</td>
+                <td>KALPANA.K.V.</td>
+                <td>PRT</td>
+                <td>M.A., B.Ed.</td>
+              </tr>
+              <tr>
+                <td>52.</td>
+                <td>MEENAKSHI.K</td>
+                <td>PRT</td>
+                <td>M.C.A.,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>53.</td>
+                <td>RAJESH.M</td>
+                <td>PRT</td>
+                <td>M.A., B.Ed.</td>
+              </tr>
+              <tr>
+                <td>54.</td>
+                <td>VAISHNAVI.K</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>55.</td>
+                <td>AMALA.A</td>
+                <td>PRT</td>
+                <td>M.A., B.Ed.</td>
+              </tr>
+              <tr>
+                <td>56.</td>
+                <td>RAMA.M</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>57.</td>
+                <td>KAVITHA.S</td>
+                <td>PRT</td>
+                <td>M.A., B.Ed.</td>
+              </tr>
+              <tr>
+                <td>58.</td>
+                <td>DEVI.M</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>59.</td>
+                <td>RAMYA.M</td>
+                <td>PRT</td>
+                <td>M.C.A. M.Phil.</td>
+              </tr>
+              <tr>
+                <td>60.</td>
+                <td>MATHAN RAJ.M</td>
+                <td>PRT</td>
+                <td>B.Music.,D.T.Ed.</td>
+              </tr>
+              <tr>
+                <td>61.</td>
+                <td>SEEMA.D</td>
+                <td>PRT</td>
+                <td>M.A,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>62.</td>
+                <td>RAJALAKSHMI.S</td>
+                <td>PRT</td>
+                <td>M.Phil.,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>63.</td>
+                <td>MUTHULAKSHMI.P</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>64.</td>
+                <td>RUPA DEVI.C</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>65.</td>
+                <td>SRI UDHAYA.T</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+              <td>66.</td>
+              <td>GURUKIRUBA.B</td>
+              <td>PRT</td>
+              <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>67.</td>
+                <td>VISHNU PRIYA. M</td>
+                <td>PRT</td>
+                <td>B.Sc.,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>68.</td>
+                <td>HEMA.M</td>
+                <td>PRT</td>
+                <td>MSC,B.Ed.</td>
+              </tr>
+              <tr>
+                <td>69.</td>
+                <td>AISHWARYA LAKSHMI.R</td>
+                <td>PRT</td>
+                <td>B.Sc.,B.Ed.</td>
+              </tr>
+          </tbody>
+</table>
+</div>
+</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+
+    </div>
+
+  </div>
+</div>
+
+
+                    </div> <!-- /.col-md-12 -->
+
+                </div> <!-- /.row -->
+
+            </div> <!-- /.col-md-8 -->
+
+            <!-- Here begin Sidebar -->
+            <div class="col-md-4">
+
+              <div class="widget-item">
+                  <div class="request-information" style="min-height:35rem;">
+                      <h4 class="widget-title">Principal Desk</h4>
+
+                      <div class="widget-inner">
+                        <?php
+                        $sql = "SELECT * FROM principal_desk order by created_at desc LIMIT 4";
+                        $result = mysqli_query($conn, $sql);
+                        while($row = mysqli_fetch_assoc($result)){ ?>
+                        <div class="prof-list-item clearfix"><div class="prof-details"><h5 class="prof-name-list">
+                                <?php echo $row['header']; ?>
+                        </h5><p class="small-text">
+                                <?php echo $row['data'] ?>
+                              </p></div></div>
+                        <?php  }  ?>
+                      </div> <!-- /.widget-inner -->
+
+                  </div> <!-- /.request-information -->
+              </div> <!-- /.widget-item -->
+                <div class="widget-main">
+                    <div class="widget-main-title">
+                        <h4 class="widget-title">Our Gallery</h4>
+                    </div>
+                    <div class="widget-inner">
+                        <div class="gallery-small-thumbs clearfix">
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="images/gallery/gallery1.jpg" title="Gallery Tittle One">
+                                    <img src="images/gal1.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="images/gallery/gallery2.jpg" title="Gallery Tittle One">
+                                    <img src="images/gal2.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="images/gallery/gallery3.jpg" title="Gallery Tittle One">
+                                    <img src="images/gal3.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="images/gallery/gallery4.jpg" title="Gallery Tittle One">
+                                    <img src="images/gal4.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="images/gallery/gallery5.jpg" title="Gallery Tittle One">
+                                    <img src="images/gal5.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="images/gallery/gallery6.jpg" title="Gallery Tittle One">
+                                    <img src="images/gal6.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="images/gallery/gallery7.jpg" title="Gallery Tittle One">
+                                    <img src="images/slider_img1.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="images/gallery/gallery8.jpg" title="Gallery Tittle One">
+                                    <img src="images/slider_img2.jpg" alt="" />
+                                </a>
+                            </div>
+                        </div> <!-- /.galler-small-thumbs -->
+                    </div> <!-- /.widget-inner -->
+                </div> <!-- /.widget-main -->
+
+            </div> <!-- /.col-md-4 -->
+
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+
+    <!-- begin The Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Contact Us</h4>
+                        <p style="font-weight:bold">MVM school short description
+                         </br></br>
+                         Mailing address:</br>Ammachathiram, Thirubuvanam (PO), </br> Mayiladthurai Main Road.</p>
+
+                         <br />
+                          Phone Numbers:</br>+91 435 2462666</br>+91 435 2462766</p>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Maps</h4>
+                <div id="map" style="width:90%;height:200px;background:yellow">
+                    </div>
+                </div>
+
+
+            </div> <!-- /.row -->
+
+
+        </div> <!-- /.container -->
+    </footer> <!-- /.site-footer -->
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
