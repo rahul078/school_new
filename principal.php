@@ -6,7 +6,7 @@ include ('auth.php');
     $servername = "localhost";
     $username = "editor1";
     $password = "Mvm@Mvm";
-    $dbname = "^school";
+    $dbname = "school_mvm";
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
     $sql = "INSERT INTO principal_desk(header, data)VALUES ('$heading','$content')";

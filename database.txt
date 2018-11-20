@@ -1,6 +1,6 @@
 GRANT ALL PRIVILEGES ON *.* TO 'editor'@'localhost' IDENTIFIED BY 'Mvm@Mvm';
 
-CREATE DATABASE ^school;
+CREATE DATABASE school_mvm;
 
 create table principal_desk(header varchar(25),data varchar(50),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
