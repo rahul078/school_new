@@ -1,5 +1,5 @@
 <?php
- $connect = mysqli_connect("localhost", "editor1", "Mvm@Mvm", "school_mvm");
+ $connect = mysqli_connect("localhost", "mvm_Admin", "Mvm@Mvm", "school_mvm");
  if(isset($_POST["insert"]))
  {
       $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));

@@ -1,4 +1,4 @@
-GRANT ALL PRIVILEGES ON *.* TO 'editor'@'localhost' IDENTIFIED BY 'Mvm@Mvm';
+GRANT ALL PRIVILEGES ON *.* TO 'mvm_Admin'@'localhost' IDENTIFIED BY 'Mvm@Mvm';
 
 CREATE DATABASE school_mvm;
 

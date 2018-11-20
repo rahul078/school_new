@@ -2,7 +2,7 @@
     $heading=$_POST["notice"];
     $content=$_POST["ndetails"];
     $servername = "localhost";
-    $username = "editor1";
+    $username = "mvm_Admin";
     $password = "Mvm@Mvm";
     $dbname = "school_mvm";
     $conn = mysqli_connect($servername, $username, $password, $dbname);

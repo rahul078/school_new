@@ -16,7 +16,7 @@ if(isset($_POST["submit"])){
 
         //DB details
         $dbHost     = "localhost";
-        $dbUsername = "editor1";
+        $dbUsername = "mvm_Admin";
         $dbPassword ="Mvm@Mvm";
         $dbName     = "school_mvm";
 
