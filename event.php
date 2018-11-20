@@ -18,7 +18,7 @@ if(isset($_POST["submit"])){
         $dbHost     = "localhost";
         $dbUsername = "editor1";
         $dbPassword ="Mvm@Mvm";
-        $dbName     = "School";
+        $dbName     = "^school";
 
         //Create connection and select DB
         $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);

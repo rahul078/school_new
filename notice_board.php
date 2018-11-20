@@ -4,7 +4,7 @@
     $servername = "localhost";
     $username = "editor1";
     $password = "Mvm@Mvm";
-    $dbname = "School";
+    $dbname = "^school";
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
     $sql = "INSERT INTO notice_board(header, data)VALUES ('$heading','$content')";
