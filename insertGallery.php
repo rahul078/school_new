@@ -1,4 +1,5 @@
 <?php
+require('auth.php');
  $connect = mysqli_connect("localhost", "mvm_Admin", "Mvm@Mvm", "school_mvm");
  if(isset($_POST["insert"]))
  {
@@ -114,7 +115,7 @@
               <div class="row">
 
 
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                       <div class="logo">
                           <a href="index.html" rel="home">
                               <img src="images/logo.png" style="width:50%;height:50%" alt="Universe">
@@ -122,16 +123,14 @@
                       </div> <!-- /.logo -->
                   </div> <!-- /.col-md-4 -->
 
-                  <div class="col-md-4 header-right">
-                    <p><i class="fa fa-phone"></i>0435 2462666/2462766</p>
-                    <p><i class="fa fa-envelope"></i> <a href="#">info@maharishividyamandirkmb.com</a></p>
+                  <div class="col-md-6 header-right">
+
+                    <center><h2 style="color:white; font-family: Copperplate, 'Copperplate Gothic Light', fantasy; font-style: normal; font-variant: normal;">MAHARISHI VIDYAMANDIR KMB</h2></center>
                       <ul class="small-links">
-                          <li><a href="about.html">About Us</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                          <li><a href="#">Apply Now</a></li>
+                            <li><a href="delete.php">Logout</a></li>
                       </ul>
                   </div> <!-- /.header-right -->
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                     <div class="logo">
                         <a href="index.html" rel="home">
                             <img src="images/maharishi.png" style="width:55%;height:55%;" alt="Universe">

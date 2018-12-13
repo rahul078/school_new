@@ -10,7 +10,7 @@
     {
       if(document.getElementById("email").value=="mvm_Admin" && document.getElementById("password").value=="Mvm@Mvm")
       {
-        $_SESSION['username'] = $_POST['username'];
+
         window.location="http://localhost/forms.html";
       }
       else {
@@ -54,7 +54,7 @@ input{
   color: white;
 }
 
-input[type="email"], input[type="password"]
+input[type="text"], input[type="password"]
 {
   border: none;
   border-bottom: 1px solid red;
@@ -62,7 +62,7 @@ input[type="email"], input[type="password"]
   outline: none;
   height: 40px;
 }
-input[type="button"]
+input[type="submit"]
 {
   border: none;
   outline: none;
@@ -77,7 +77,7 @@ h2{
   color: white;
 }
 
-input[type="button"]:hover
+input[type="submit"]:hover
 {
   background: #efed40;
   color: #262626;
@@ -97,11 +97,11 @@ input[type="button"]:hover
     <center><img src="logo.png" alt="" id="img"></center>
   <div class="box">
   <h2><center>ADMIN LOGIN ONLY</center></h2>
-  <form>
+  <form method="post" action="validate_user.php">
     <center><img src="user.png" alt="Image not found" id="user"></center>
-      <input type="email" id="email" value="" placeholder="Username" size="50"><br>
-      <input type="password" id="password" value="" placeholder="Password" size="50">
-      <input type="button" onclick="redirect()" value="Sign In">
+      <input type="text" id="email" name="email" value="" placeholder="Username" size="50"><br>
+      <input type="password" id="password" name="password" value="" placeholder="Password" size="50">
+      <input type="submit" value="Sign In">
   </form>
   </div>
 </body>

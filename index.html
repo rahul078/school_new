@@ -29,7 +29,10 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="css/animate.css" rel="stylesheet" media="screen">
-
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <link href="rs-plugin/css/settings.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" media="screen">
 
     <!-- Favicons -->
@@ -166,7 +169,7 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
           <div class="row">
 
 
-              <div class="col-md-4">
+              <div class="col-md-3">
                   <div class="logo">
                       <a href="index.html" rel="home">
                           <img src="images/logo.png" style="width:50%;height:50%" alt="Universe">
@@ -174,16 +177,16 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
                   </div> <!-- /.logo -->
               </div> <!-- /.col-md-4 -->
 
-              <div class="col-md-4 header-right">
-                <p><i class="fa fa-phone"></i>0435 2462666/2462766</p>
-                <p><i class="fa fa-envelope"></i> <a href="#">info@maharishividyamandirkmb.com</a></p>
+              <div class="col-md-6 header-right">
+
+                <center><h2 style="color:white; font-family: Copperplate, 'Copperplate Gothic Light', fantasy; font-style: normal; font-variant: normal;">MAHARISHI VIDYAMANDIR KMB</h2></center>
                   <ul class="small-links">
                       <li><a href="about.html">About Us</a></li>
                       <li><a href="contact.html">Contact</a></li>
                       <li><a href="admin.html">Login</a></li>
                   </ul>
               </div> <!-- /.header-right -->
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="logo">
                     <a href="index.html" rel="home">
                         <img src="images/maharishi.png" style="width:55%;height:55%;" alt="Universe">
@@ -365,7 +368,7 @@ peaceful.</p></div> <!-- /.widget-item -->
                             </div> <!-- /.widget-main-title -->
                             <div class="widget-inner">
                               <?php
-                              $sql ="SELECT * FROM upcoming_events order by created_at desc LIMIT 3";
+                              $sql ="SELECT * FROM school_mvm.upcoming_events order by created_at desc LIMIT 3";
                               $result = mysqli_query($conn, $sql);
                               while($row = mysqli_fetch_assoc($result)){
                                 $date=$row['event_date'];
@@ -401,14 +404,20 @@ peaceful.</p></div> <!-- /.widget-item -->
                                 <h4 class="widget-title">Educational Partners</h4>
                             </div> <!-- /.widget-main-title -->
                             <div class="widget-inner">
-                                <div class="our-campus clearfix">
-                                    <ul>
-                                        <li><img src="images/campus/campus-logo1.jpg" alt=""></li>
-                                        <li><img src="images/campus/campus-logo2.jpg" alt=""></li>
-                                        <li><img src="images/campus/campus-logo3.jpg" alt=""></li>
-                                        <li><img src="images/campus/campus-logo4.jpg" alt=""></li>
-                                    </ul>
-                                </div>
+                              <div class="slider_bottom">
+                                  <div class="single_slide"><a href="#"><img src="img/slide_1.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_2.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_3.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_4.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_5.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_6.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_7.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_8.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_9.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_10.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_11.jpg" alt="" width="128px" height="128px"></a></div>
+                                  <div class="single_slide"><a href="#"><img src="img/slide_12.jpg" alt="" width="128px" height="128px"></a></div>
+                              </div>
                             </div>
                         </div> <!-- /.widget-main -->
                     </div> <!-- /.col-md-12 -->
@@ -524,9 +533,10 @@ peaceful.</p></div> <!-- /.widget-item -->
                     <div class="footer-widget">
                         <h4 class="footer-widget-title">Contact Us</h4>
                         <p style="font-weight:bold">MVM school short description
-                         </br></br>
+                         </br>
+                         <p><i class="fa fa-envelope"></i> <a href="#">info@maharishividyamandirkmb.com</a></p>
+                         <br />
                          Mailing address:</br>Ammachathiram, Thirubuvanam (PO), </br> Mayiladthurai Main Road.</p>
-
                          <br />
                           Phone Numbers:</br>+91 435 2462666</br>+91 435 2462766</p>
                     </div>
@@ -550,6 +560,19 @@ peaceful.</p></div> <!-- /.widget-item -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
+    <!--jQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--Revolation Slider-->
+    <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!--Carousel Slider-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--Mobile Menu Js-->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <!--Active jQuery-->
+    <script src="js/main.js"></script>
 
 </body>
 

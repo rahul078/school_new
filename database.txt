@@ -13,26 +13,26 @@ create table Events(date varchar(10),place varchar(20),img longblob,header varch
 create table upcoming_events(event_date varchar(15),header varchar(20),description varchar(50),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
 
-insert into School.upcoming_events (event_date,header,description) values('1-Jan-2019','New Year','New Year Party');
-insert into School.upcoming_events (event_date,header,description) values('10-Jan-2019','School Start','School starts from this day');
-insert into School.upcoming_events (event_date,header,description) values('26-Jan-2019','Republic day','Event held inschool');
+insert into school_mvm.upcoming_events (event_date,header,description) values('1-Jan-2019','New Year','New Year Party');
+insert into school_mvm.upcoming_events (event_date,header,description) values('10-Jan-2019','School Start','School starts from this day');
+insert into school_mvm.upcoming_events (event_date,header,description) values('26-Jan-2019','Republic day','Event held inschool');
 
 create table gallery(img blob,event_year varchar(10),header varchar(20),data varchar(50),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
-insert into School.principal_desk (header,data)values('header 1','data 1');
-insert into School.principal_desk (header,data)values('header 2','data 2');
-insert into School.principal_desk (header,data)values('header 3','data 3');
-insert into School.principal_desk (header,data)values('header 4','data 4');
-insert into School.principal_desk (header,data)values('header 5','data 5');
+insert into school_mvm.principal_desk (header,data)values('header 1','data 1');
+insert into school_mvm.principal_desk (header,data)values('header 2','data 2');
+insert into school_mvm.principal_desk (header,data)values('header 3','data 3');
+insert into school_mvm.principal_desk (header,data)values('header 4','data 4');
+insert into school_mvm.principal_desk (header,data)values('header 5','data 5');
 
-insert into School.notice_board (header,data)values('header 1','data 1');
-insert into School.notice_board (header,data)values('header 2','data 2');
-insert into School.notice_board (header,data)values('header 3','data 3');
-insert into School.notice_board (header,data)values('header 4','data 4');
-insert into School.notice_board (header,data)values('header 5','data 5');
+insert into school_mvm.notice_board (header,data)values('header 1','data 1');
+insert into school_mvm.notice_board (header,data)values('header 2','data 2');
+insert into school_mvm.notice_board (header,data)values('header 3','data 3');
+insert into school_mvm.notice_board (header,data)values('header 4','data 4');
+insert into school_mvm.notice_board (header,data)values('header 5','data 5');
 
-insert into School.latest_news (header,data)values('header 1','data 1');
-insert into School.latest_news (header,data)values('header 2','data 2');
-insert into School.latest_news (header,data)values('header 3','data 3');
-insert into School.latest_news (header,data)values('header 4','data 4');
-insert into School.latest_news (header,data)values('header 5','data 5');
+insert into school_mvm.latest_news (header,data)values('header 1','data 1');
+insert into school_mvm.latest_news (header,data)values('header 2','data 2');
+insert into school_mvm.latest_news (header,data)values('header 3','data 3');
+insert into school_mvm.latest_news (header,data)values('header 4','data 4');
+insert into school_mvm.latest_news (header,data)values('header 5','data 5');
